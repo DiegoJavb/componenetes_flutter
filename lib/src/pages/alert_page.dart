@@ -34,7 +34,7 @@ class AlertPage extends StatelessWidget {
         builder: (context) {
           return AlertDialog(
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0)),
+                borderRadius: BorderRadius.circular(30.0)),
             title: Text('Título'),
             content: Column(
               mainAxisSize: MainAxisSize.min,
@@ -42,7 +42,7 @@ class AlertPage extends StatelessWidget {
                 Text('Este es el contenido de la caja de la alerta'),
                 FlutterLogo(
                   size: 100.0,
-                )
+                ),
               ],
             ),
             actions: <Widget>[
