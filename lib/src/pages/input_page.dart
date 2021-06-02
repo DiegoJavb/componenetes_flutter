@@ -92,8 +92,8 @@ class _InputPageState extends State<InputPage> {
       enableInteractiveSelection: false,
       controller: _inputFieldDateController,
       decoration: InputDecoration(
-        hintText: 'Contraseña',
-        labelText: 'Contraseña',
+        hintText: 'Fecha de nacimiento',
+        labelText: 'Fecha de nacimiento',
         suffixIcon: Icon(Icons.perm_contact_cal),
         icon: Icon(Icons.calendar_today),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
@@ -111,6 +111,7 @@ class _InputPageState extends State<InputPage> {
       initialDate: new DateTime.now(),
       firstDate: new DateTime(2020),
       lastDate: new DateTime(2022),
+      locale: Locale('es', 'ES'),
     );
     if (picked != null) {
       _fecha = picked.toString();
